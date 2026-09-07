@@ -57,7 +57,7 @@ jobs:
       - name: Unit tests with branch coverage
         run: |
           pytest -q \
-            --ignore=tests/test_stage4d_integration.py \
+            --ignore=tests/test_incident_workflow_integration.py \
             --cov=incident_commander \
             --cov-branch \
             --cov-report=term-missing \
@@ -113,7 +113,7 @@ jobs:
           python -m pip install -e ".[dev]"
 
       - name: Run API + HITL integration tests
-        run: pytest -q tests/test_stage4d_integration.py
+        run: pytest -q tests/test_incident_workflow_integration.py
 
   docker-smoke:
     name: Hardened Docker smoke
@@ -150,3 +150,4 @@ jobs:
           path: docker-smoke.log
           if-no-files-found: ignore
           retention-days: 7
+
