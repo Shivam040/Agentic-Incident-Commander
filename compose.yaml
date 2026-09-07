@@ -1,0 +1,66 @@
+name: agentic-incident-commander
+
+services:
+  incident-commander:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: agentic-incident-commander:local
+    ports:
+      - "8000:8000"
+
+    environment:
+      AI_MODE: ${AI_MODE:-llm}
+      AI_PROVIDER: ${AI_PROVIDER:-ollama}
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-qwen3:4b}
+      OLLAMA_EMBEDDING_MODEL: ${OLLAMA_EMBEDDING_MODEL:-nomic-embed-text}
+      OLLAMA_BASE_URL: ${OLLAMA_BASE_URL:-http://host.docker.internal:11434}
+      RUNBOOK_RETRIEVAL: ${RUNBOOK_RETRIEVAL:-semantic}
+      RUNBOOK_VECTOR_INDEX_PATH: /app/data/vector_index/runbooks.json
+      CHECKPOINT_DB_PATH: /app/data/checkpoints/incident_commander.sqlite
+      LANGGRAPH_STRICT_MSGPACK: ${LANGGRAPH_STRICT_MSGPACK:-true}
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+      INCIDENT_COMMANDER_DATA_DIR: /app/data
+
+      # Optional LangSmith tracing. Never bake API keys into the image.
+      LANGSMITH_TRACING: ${LANGSMITH_TRACING:-false}
+      LANGSMITH_API_KEY: ${LANGSMITH_API_KEY:-}
+      LANGSMITH_PROJECT: ${LANGSMITH_PROJECT:-agentic-incident-commander}
+      LANGSMITH_WORKSPACE_ID: ${LANGSMITH_WORKSPACE_ID:-}
+
+    volumes:
+      - checkpoint_data:/app/data/checkpoints
+      - vector_index_data:/app/data/vector_index
+
+    # Works on Docker Desktop and modern Linux Docker engines.
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+    # Runtime hardening.
+    init: true
+    read_only: true
+    tmpfs:
+      - /tmp:size=64m,mode=1777
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    restart: unless-stopped
+    stop_grace_period: 20s
+
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=3)",
+        ]
+      interval: 30s
+      timeout: 5s
+      start_period: 20s
+      retries: 3
+
+volumes:
+  checkpoint_data:
+  vector_index_data:
