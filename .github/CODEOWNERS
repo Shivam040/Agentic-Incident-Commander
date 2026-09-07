@@ -1,0 +1,10 @@
+# Require the repository owner to review changes to high-risk project areas.
+* @Shivam040
+
+/.github/ @Shivam040
+/Dockerfile @Shivam040
+/compose.yaml @Shivam040
+/src/incident_commander/graph.py @Shivam040
+/src/incident_commander/mcp_server.py @Shivam040
+/src/incident_commander/tools/remediation.py @Shivam040
+/src/incident_commander/prompts.py @Shivam040
