@@ -1,0 +1,56 @@
+# ==============================
+# Python virtual environments
+# ==============================
+.venv/
+
+# ==============================
+# Python cache / packaging
+# ==============================
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# ==============================
+# Testing / linting / coverage
+# ==============================
+.pytest_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# ==============================
+# Local environment / secrets
+# ==============================
+.env
+
+# ==============================
+# IDE / editor files
+# ==============================
+.idea/
+.vscode/
+
+# ==============================
+# Runtime persistence artifacts
+# ==============================
+data/checkpoints/*.sqlite
+data/checkpoints/*.sqlite-*
+
+# Generated semantic-vector index
+data/vector_index/*.json
+
+# Evaluation runtime state
+evaluations/*.sqlite
+
+# ==============================
+# Docker / smoke-test artifacts
+# ==============================
+docker-smoke.log
+
+# ==============================
+# Personal / temporary files
+# ==============================
+docs/INTERVIEW_DEFENSE.md
+project_structure.txt

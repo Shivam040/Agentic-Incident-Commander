@@ -1,0 +1,34 @@
+# Local environments / VCS
+.venv
+.git
+.github
+.env
+.env.*
+!.env.example
+
+# Python caches / build outputs
+__pycache__
+.pytest_cache
+.ruff_cache
+.mypy_cache
+.coverage
+coverage.xml
+*.pyc
+*.pyo
+*.pyd
+build
+dist
+*.egg-info
+
+# Local runtime state must not be baked into the image
+data/checkpoints/*.sqlite
+data/checkpoints/*.sqlite-*
+data/vector_index/*.json
+evaluations/latest_results.json
+evaluations/eval_checkpoints.sqlite
+
+# Editor / OS noise
+.vscode
+.idea
+.DS_Store
+Thumbs.db
