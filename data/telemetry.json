@@ -1,0 +1,263 @@
+{
+  "checkout-api": {
+    "service": "checkout-api",
+    "status": "degraded",
+    "cpu_percent": 92.0,
+    "memory_percent": 71.0,
+    "error_rate": 0.18,
+    "p95_latency_ms": 1870,
+    "request_rate_rps": 410
+  },
+  "auth-service": {
+    "service": "auth-service",
+    "status": "healthy",
+    "cpu_percent": 44.0,
+    "memory_percent": 58.0,
+    "error_rate": 0.006,
+    "p95_latency_ms": 230,
+    "request_rate_rps": 660
+  },
+  "recommendation-api": {
+    "service": "recommendation-api",
+    "status": "degraded",
+    "cpu_percent": 96.0,
+    "memory_percent": 68.0,
+    "error_rate": 0.12,
+    "p95_latency_ms": 1450,
+    "request_rate_rps": 920
+  },
+  "search-api": {
+    "service": "search-api",
+    "status": "degraded",
+    "cpu_percent": 58.0,
+    "memory_percent": 74.0,
+    "error_rate": 0.14,
+    "p95_latency_ms": 1710,
+    "request_rate_rps": 380
+  },
+  "orders-api": {
+    "service": "orders-api",
+    "status": "degraded",
+    "cpu_percent": 94.0,
+    "memory_percent": 64.0,
+    "error_rate": 0.11,
+    "p95_latency_ms": 1320,
+    "request_rate_rps": 860
+  },
+  "payments-api": {
+    "service": "payments-api",
+    "status": "degraded",
+    "cpu_percent": 61.0,
+    "memory_percent": 69.0,
+    "error_rate": 0.22,
+    "p95_latency_ms": 2140,
+    "request_rate_rps": 300
+  },
+  "profile-api": {
+    "service": "profile-api",
+    "status": "healthy",
+    "cpu_percent": 37.0,
+    "memory_percent": 52.0,
+    "error_rate": 0.003,
+    "p95_latency_ms": 180,
+    "request_rate_rps": 250
+  },
+  "catalog-api": {
+    "service": "catalog-api",
+    "status": "degraded",
+    "cpu_percent": 93.0,
+    "memory_percent": 66.0,
+    "error_rate": 0.13,
+    "p95_latency_ms": 1580,
+    "request_rate_rps": 780
+  },
+  "pricing-api": {
+    "service": "pricing-api",
+    "status": "degraded",
+    "cpu_percent": 91.0,
+    "memory_percent": 63.0,
+    "error_rate": 0.15,
+    "p95_latency_ms": 1620,
+    "request_rate_rps": 740
+  },
+  "feed-api": {
+    "service": "feed-api",
+    "status": "degraded",
+    "cpu_percent": 95.0,
+    "memory_percent": 70.0,
+    "error_rate": 0.12,
+    "p95_latency_ms": 1410,
+    "request_rate_rps": 970
+  },
+  "inventory-api": {
+    "service": "inventory-api",
+    "status": "degraded",
+    "cpu_percent": 89.0,
+    "memory_percent": 61.0,
+    "error_rate": 0.11,
+    "p95_latency_ms": 1290,
+    "request_rate_rps": 700
+  },
+  "notification-api": {
+    "service": "notification-api",
+    "status": "degraded",
+    "cpu_percent": 94.0,
+    "memory_percent": 65.0,
+    "error_rate": 0.14,
+    "p95_latency_ms": 1530,
+    "request_rate_rps": 840
+  },
+  "media-api": {
+    "service": "media-api",
+    "status": "degraded",
+    "cpu_percent": 97.0,
+    "memory_percent": 72.0,
+    "error_rate": 0.16,
+    "p95_latency_ms": 1760,
+    "request_rate_rps": 1010
+  },
+  "session-api": {
+    "service": "session-api",
+    "status": "degraded",
+    "cpu_percent": 55.0,
+    "memory_percent": 69.0,
+    "error_rate": 0.13,
+    "p95_latency_ms": 1680,
+    "request_rate_rps": 420
+  },
+  "cart-api": {
+    "service": "cart-api",
+    "status": "degraded",
+    "cpu_percent": 62.0,
+    "memory_percent": 73.0,
+    "error_rate": 0.12,
+    "p95_latency_ms": 1540,
+    "request_rate_rps": 500
+  },
+  "reviews-api": {
+    "service": "reviews-api",
+    "status": "degraded",
+    "cpu_percent": 49.0,
+    "memory_percent": 67.0,
+    "error_rate": 0.11,
+    "p95_latency_ms": 1360,
+    "request_rate_rps": 330
+  },
+  "address-api": {
+    "service": "address-api",
+    "status": "degraded",
+    "cpu_percent": 57.0,
+    "memory_percent": 76.0,
+    "error_rate": 0.15,
+    "p95_latency_ms": 1820,
+    "request_rate_rps": 260
+  },
+  "loyalty-api": {
+    "service": "loyalty-api",
+    "status": "degraded",
+    "cpu_percent": 64.0,
+    "memory_percent": 71.0,
+    "error_rate": 0.13,
+    "p95_latency_ms": 1490,
+    "request_rate_rps": 390
+  },
+  "gateway-api": {
+    "service": "gateway-api",
+    "status": "degraded",
+    "cpu_percent": 53.0,
+    "memory_percent": 62.0,
+    "error_rate": 0.12,
+    "p95_latency_ms": 1600,
+    "request_rate_rps": 620
+  },
+  "billing-api": {
+    "service": "billing-api",
+    "status": "degraded",
+    "cpu_percent": 62.0,
+    "memory_percent": 68.0,
+    "error_rate": 0.21,
+    "p95_latency_ms": 2200,
+    "request_rate_rps": 280
+  },
+  "shipment-api": {
+    "service": "shipment-api",
+    "status": "degraded",
+    "cpu_percent": 58.0,
+    "memory_percent": 65.0,
+    "error_rate": 0.18,
+    "p95_latency_ms": 1980,
+    "request_rate_rps": 310
+  },
+  "fraud-api": {
+    "service": "fraud-api",
+    "status": "degraded",
+    "cpu_percent": 66.0,
+    "memory_percent": 70.0,
+    "error_rate": 0.17,
+    "p95_latency_ms": 1890,
+    "request_rate_rps": 450
+  },
+  "subscription-api": {
+    "service": "subscription-api",
+    "status": "degraded",
+    "cpu_percent": 60.0,
+    "memory_percent": 72.0,
+    "error_rate": 0.2,
+    "p95_latency_ms": 2100,
+    "request_rate_rps": 350
+  },
+  "reporting-api": {
+    "service": "reporting-api",
+    "status": "degraded",
+    "cpu_percent": 54.0,
+    "memory_percent": 74.0,
+    "error_rate": 0.19,
+    "p95_latency_ms": 2300,
+    "request_rate_rps": 180
+  },
+  "identity-api": {
+    "service": "identity-api",
+    "status": "degraded",
+    "cpu_percent": 63.0,
+    "memory_percent": 67.0,
+    "error_rate": 0.16,
+    "p95_latency_ms": 1870,
+    "request_rate_rps": 510
+  },
+  "preferences-api": {
+    "service": "preferences-api",
+    "status": "healthy",
+    "cpu_percent": 35.0,
+    "memory_percent": 50.0,
+    "error_rate": 0.002,
+    "p95_latency_ms": 160,
+    "request_rate_rps": 290
+  },
+  "geo-api": {
+    "service": "geo-api",
+    "status": "healthy",
+    "cpu_percent": 41.0,
+    "memory_percent": 55.0,
+    "error_rate": 0.004,
+    "p95_latency_ms": 220,
+    "request_rate_rps": 360
+  },
+  "promotions-api": {
+    "service": "promotions-api",
+    "status": "degraded",
+    "cpu_percent": 71.0,
+    "memory_percent": 66.0,
+    "error_rate": 0.08,
+    "p95_latency_ms": 1120,
+    "request_rate_rps": 540
+  },
+  "audit-api": {
+    "service": "audit-api",
+    "status": "degraded",
+    "cpu_percent": 68.0,
+    "memory_percent": 60.0,
+    "error_rate": 0.09,
+    "p95_latency_ms": 1180,
+    "request_rate_rps": 200
+  }
+}

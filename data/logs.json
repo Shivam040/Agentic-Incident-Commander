@@ -1,0 +1,185 @@
+{
+  "checkout-api": [
+    "2026-09-06T06:20:14Z INFO request completed status=200 latency_ms=280",
+    "2026-09-06T06:20:21Z WARN database connection pool utilization=96%",
+    "2026-09-06T06:20:23Z ERROR database timeout after 1500ms",
+    "2026-09-06T06:20:24Z ERROR request failed status=503 dependency=payments-db",
+    "2026-09-06T06:20:28Z WARN retry budget nearly exhausted"
+  ],
+  "auth-service": [
+    "2026-09-06T06:20:15Z INFO token issued latency_ms=84",
+    "2026-09-06T06:20:20Z INFO token issued latency_ms=90"
+  ],
+  "recommendation-api": [
+    "2026-09-07T01:10:11Z WARN cpu utilization=96%",
+    "2026-09-07T01:10:15Z WARN request queue depth increasing",
+    "2026-09-07T01:10:18Z ERROR request failed status=503 reason=worker saturation",
+    "2026-09-07T01:10:21Z WARN p95 latency above service threshold",
+    "2026-09-07T01:10:25Z INFO downstream dependencies healthy"
+  ],
+  "search-api": [
+    "2026-09-07T02:10:11Z INFO downstream dependencies healthy",
+    "2026-09-07T02:10:14Z ERROR worker thread stuck during request processing",
+    "2026-09-07T02:10:17Z WARN request latency rising",
+    "2026-09-07T02:10:20Z ERROR request failed status=503 reason=stuck worker",
+    "2026-09-07T02:10:23Z WARN active worker capacity reduced"
+  ],
+  "orders-api": [
+    "2026-09-07T02:20:11Z WARN cpu utilization=94%",
+    "2026-09-07T02:20:14Z WARN request queue depth increasing",
+    "2026-09-07T02:20:17Z ERROR request failed status=503 reason=worker saturation",
+    "2026-09-07T02:20:20Z INFO downstream dependencies healthy"
+  ],
+  "payments-api": [
+    "2026-09-07T02:30:11Z ERROR database unavailable dependency=ledger-db",
+    "2026-09-07T02:30:14Z ERROR database timeout after 2000ms",
+    "2026-09-07T02:30:17Z ERROR request failed status=503 dependency=ledger-db",
+    "2026-09-07T02:30:20Z WARN retry budget exhausted"
+  ],
+  "profile-api": [
+    "2026-09-07T02:40:11Z INFO request completed status=200 latency_ms=165",
+    "2026-09-07T02:40:14Z INFO downstream dependencies healthy"
+  ],
+  "catalog-api": [
+    "2026-09-07T03:00:11Z WARN cpu utilization=93%",
+    "2026-09-07T03:00:14Z WARN request queue depth increasing",
+    "2026-09-07T03:00:17Z ERROR request failed status=503 reason=worker saturation",
+    "2026-09-07T03:00:20Z WARN p95 latency above service threshold",
+    "2026-09-07T03:00:23Z INFO downstream dependencies healthy"
+  ],
+  "pricing-api": [
+    "2026-09-07T03:00:11Z WARN cpu utilization=91%",
+    "2026-09-07T03:00:14Z WARN request queue depth increasing",
+    "2026-09-07T03:00:17Z ERROR request failed status=503 reason=worker saturation",
+    "2026-09-07T03:00:20Z WARN p95 latency above service threshold",
+    "2026-09-07T03:00:23Z INFO downstream dependencies healthy"
+  ],
+  "feed-api": [
+    "2026-09-07T03:00:11Z WARN cpu utilization=95%",
+    "2026-09-07T03:00:14Z WARN request queue depth increasing",
+    "2026-09-07T03:00:17Z ERROR request failed status=503 reason=worker saturation",
+    "2026-09-07T03:00:20Z WARN p95 latency above service threshold",
+    "2026-09-07T03:00:23Z INFO downstream dependencies healthy"
+  ],
+  "inventory-api": [
+    "2026-09-07T03:00:11Z WARN cpu utilization=89%",
+    "2026-09-07T03:00:14Z WARN request queue depth increasing",
+    "2026-09-07T03:00:17Z ERROR request failed status=503 reason=worker saturation",
+    "2026-09-07T03:00:20Z WARN p95 latency above service threshold",
+    "2026-09-07T03:00:23Z INFO downstream dependencies healthy"
+  ],
+  "notification-api": [
+    "2026-09-07T03:00:11Z WARN cpu utilization=94%",
+    "2026-09-07T03:00:14Z WARN request queue depth increasing",
+    "2026-09-07T03:00:17Z ERROR request failed status=503 reason=worker saturation",
+    "2026-09-07T03:00:20Z WARN p95 latency above service threshold",
+    "2026-09-07T03:00:23Z INFO downstream dependencies healthy"
+  ],
+  "media-api": [
+    "2026-09-07T03:00:11Z WARN cpu utilization=97%",
+    "2026-09-07T03:00:14Z WARN request queue depth increasing",
+    "2026-09-07T03:00:17Z ERROR request failed status=503 reason=worker saturation",
+    "2026-09-07T03:00:20Z WARN p95 latency above service threshold",
+    "2026-09-07T03:00:23Z INFO downstream dependencies healthy"
+  ],
+  "session-api": [
+    "2026-09-07T03:10:11Z INFO downstream dependencies healthy",
+    "2026-09-07T03:10:14Z ERROR worker thread stuck during request processing",
+    "2026-09-07T03:10:17Z WARN request latency rising",
+    "2026-09-07T03:10:20Z ERROR request failed status=503 reason=stuck worker",
+    "2026-09-07T03:10:23Z WARN active worker capacity reduced"
+  ],
+  "cart-api": [
+    "2026-09-07T03:10:11Z INFO downstream dependencies healthy",
+    "2026-09-07T03:10:14Z ERROR worker thread stuck during request processing",
+    "2026-09-07T03:10:17Z WARN request latency rising",
+    "2026-09-07T03:10:20Z ERROR request failed status=503 reason=stuck worker",
+    "2026-09-07T03:10:23Z WARN active worker capacity reduced"
+  ],
+  "reviews-api": [
+    "2026-09-07T03:10:11Z INFO downstream dependencies healthy",
+    "2026-09-07T03:10:14Z ERROR worker thread stuck during request processing",
+    "2026-09-07T03:10:17Z WARN request latency rising",
+    "2026-09-07T03:10:20Z ERROR request failed status=503 reason=stuck worker",
+    "2026-09-07T03:10:23Z WARN active worker capacity reduced"
+  ],
+  "address-api": [
+    "2026-09-07T03:10:11Z INFO downstream dependencies healthy",
+    "2026-09-07T03:10:14Z ERROR worker thread stuck during request processing",
+    "2026-09-07T03:10:17Z WARN request latency rising",
+    "2026-09-07T03:10:20Z ERROR request failed status=503 reason=stuck worker",
+    "2026-09-07T03:10:23Z WARN active worker capacity reduced"
+  ],
+  "loyalty-api": [
+    "2026-09-07T03:10:11Z INFO downstream dependencies healthy",
+    "2026-09-07T03:10:14Z ERROR worker thread stuck during request processing",
+    "2026-09-07T03:10:17Z WARN request latency rising",
+    "2026-09-07T03:10:20Z ERROR request failed status=503 reason=stuck worker",
+    "2026-09-07T03:10:23Z WARN active worker capacity reduced"
+  ],
+  "gateway-api": [
+    "2026-09-07T03:10:11Z INFO downstream dependencies healthy",
+    "2026-09-07T03:10:14Z ERROR worker thread stuck during request processing",
+    "2026-09-07T03:10:17Z WARN request latency rising",
+    "2026-09-07T03:10:20Z ERROR request failed status=503 reason=stuck worker",
+    "2026-09-07T03:10:23Z WARN active worker capacity reduced"
+  ],
+  "billing-api": [
+    "2026-09-07T03:20:11Z ERROR database unavailable dependency=billing-db",
+    "2026-09-07T03:20:14Z ERROR database timeout after 1800ms",
+    "2026-09-07T03:20:17Z ERROR request failed status=503 dependency=billing-db",
+    "2026-09-07T03:20:20Z WARN retry budget exhausted"
+  ],
+  "shipment-api": [
+    "2026-09-07T03:20:11Z ERROR database unavailable dependency=shipment-db",
+    "2026-09-07T03:20:14Z ERROR database timeout after 1800ms",
+    "2026-09-07T03:20:17Z ERROR request failed status=503 dependency=shipment-db",
+    "2026-09-07T03:20:20Z WARN retry budget exhausted"
+  ],
+  "fraud-api": [
+    "2026-09-07T03:20:11Z ERROR database unavailable dependency=risk-db",
+    "2026-09-07T03:20:14Z ERROR database timeout after 1800ms",
+    "2026-09-07T03:20:17Z ERROR request failed status=503 dependency=risk-db",
+    "2026-09-07T03:20:20Z WARN retry budget exhausted"
+  ],
+  "subscription-api": [
+    "2026-09-07T03:20:11Z ERROR database unavailable dependency=subscription-db",
+    "2026-09-07T03:20:14Z ERROR database timeout after 1800ms",
+    "2026-09-07T03:20:17Z ERROR request failed status=503 dependency=subscription-db",
+    "2026-09-07T03:20:20Z WARN retry budget exhausted"
+  ],
+  "reporting-api": [
+    "2026-09-07T03:20:11Z ERROR database unavailable dependency=analytics-db",
+    "2026-09-07T03:20:14Z ERROR database timeout after 1800ms",
+    "2026-09-07T03:20:17Z ERROR request failed status=503 dependency=analytics-db",
+    "2026-09-07T03:20:20Z WARN retry budget exhausted"
+  ],
+  "identity-api": [
+    "2026-09-07T03:20:11Z ERROR database unavailable dependency=identity-db",
+    "2026-09-07T03:20:14Z ERROR database timeout after 1800ms",
+    "2026-09-07T03:20:17Z ERROR request failed status=503 dependency=identity-db",
+    "2026-09-07T03:20:20Z WARN retry budget exhausted"
+  ],
+  "preferences-api": [
+    "2026-09-07T03:30:11Z INFO request completed status=200 latency_ms=130",
+    "2026-09-07T03:30:14Z INFO downstream dependencies healthy",
+    "2026-09-07T03:30:17Z INFO no elevated error pattern observed"
+  ],
+  "geo-api": [
+    "2026-09-07T03:30:11Z INFO request completed status=200 latency_ms=190",
+    "2026-09-07T03:30:14Z INFO downstream dependencies healthy",
+    "2026-09-07T03:30:17Z INFO no elevated error pattern observed"
+  ],
+  "promotions-api": [
+    "2026-09-07T03:40:11Z WARN request latency above normal baseline",
+    "2026-09-07T03:40:14Z INFO downstream dependencies healthy",
+    "2026-09-07T03:40:17Z INFO no database timeout messages observed",
+    "2026-09-07T03:40:20Z INFO no worker saturation or stuck-worker signal observed"
+  ],
+  "audit-api": [
+    "2026-09-07T03:40:11Z WARN request latency above normal baseline",
+    "2026-09-07T03:40:14Z INFO downstream dependencies healthy",
+    "2026-09-07T03:40:17Z INFO no database timeout messages observed",
+    "2026-09-07T03:40:20Z INFO no worker saturation or stuck-worker signal observed"
+  ]
+}
